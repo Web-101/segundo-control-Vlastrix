@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Corner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Epilogue', sans-serif;
+            color: #171412;
+        }
+
+        p {
+            color: #171412;
+            line-height: 1.6;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .contenedor-principal {
+            max-width: 960px;
+            padding: 24px;
+            margin: 0 auto;
+        }
+        
+        .encabezado {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            gap: 32px;
+            border-bottom: 1px solid #E5E8EB;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-right: auto;
+        }
+
+        .logo img {
+            height: 24px;
+        }
+
+        .logo p {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .navegacion ul {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .navegacion a {
+            font-weight: 500;
+            font-size: 14px;
+            font-style: normal;
+        }
+        
+        button {
+            background-color: #F5F2F0;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+        
+        .portada {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 400px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .contenedor-foto-portada {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .contenedor-foto-portada img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portada-contenido {
+            position: relative;
+            z-index: 2;
+            padding: 40px;
+            width: 100%;
+            color: #ffffff;
+        }
+
+        .portada-contenido h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+
+        }
+
+        .portada-contenido p {
+            color: inherit;
+            font-size: 16px;
+            max-width: 600px;
+            font-weight: 400;
+        }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .seccion-destacados {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-top: -12px;
+        }
+
+        .tarjeta-producto {
+            flex: 1;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contenedor-foto-producto {
+            width: 100%;
+            height: 240px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .contenedor-foto-producto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nombre-producto {
+            margin-bottom: -10px;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .descripcion-producto {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 400;
+            color: #8A7561;
+            font-style: normal;
+        }
+        
+        .pie-de-pagina {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            padding-top: 32px;
+            margin-bottom: 32px;
+        }
+
+        .enlaces-legales {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .enlaces-legales a {
+            color: #8A7561;
+            font-size: 16px;
+        }
+
+        .redes-sociales {
+            display: flex;
+            gap: 10px;
+        }
+
+        .redes-sociales img {
+            width: 24px;
+            height: 24px;
+            opacity: 0.6;
+        }
+
+        .pie-de-pagina p {
+            color: #8A7561;
+            font-size: 14px;
+            margin: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="contenedor-principal encabezado">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo de Coffee Corner">
+            <p><strong>Coffee Corner</strong></p>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button>Order Online</button>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="portada">
+            <figure class="contenedor-foto-portada">
+                <img src="./images/landing_image.png" alt="Coffee Corner Cafe">
+            </figure>
+            <div class="portada-contenido">
+                <h1>Welcome to Coffee Corner</h1>
+                <p>Your local spot for the finest coffee and pastries. Enjoy our carefully crafted menu in a warm atmosphere.</p>
+            </div>
+        </section>
+
+        <h2>Featured Items</h2>
+        <section class="seccion-destacados">
+            <article class="tarjeta tarjeta-producto">
+                <figure class="contenedor-foto-producto">
+                    <img src="./images/latte.png" alt="Latte">
+                </figure>
+                <h3 class="nombre-producto">Latte</h3>
+                <p class="descripcion-producto">Our signature latte with beautiful art.</p>
+            </article>
+
+            <article class="tarjeta tarjeta-producto">
+                <figure class="contenedor-foto-producto">
+                    <img src="./images/croissant.png" alt="Croissant">
+                </figure>
+                <h3 class="nombre-producto">Croissant</h3>
+                <p class="descripcion-producto">Flaky and buttery, baked fresh daily.</p>
+            </article>
+
+            <article class="tarjeta tarjeta-producto">
+                <figure class="contenedor-foto-producto">
+                    <img src="./images/iced_coffee.png" alt="Iced Coffee">
+                </figure>
+                <h3 class="nombre-producto">Iced Coffee</h3>
+                <p class="descripcion-producto">Perfect for a refreshing pick-me-up.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Our Story</h2>
+            <p>Coffee Corner was founded in 2018 with a passion for bringing high-quality coffee and delicious treats to our community. We source our beans from sustainable farms and use only the freshest ingredients. Our goal is to create a welcoming space where everyone can enjoy a moment of relaxation and connection.</p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>Visit us at 123 Main Street, Anytown, USA. Call us at (555) 123-4567 or email us at info@coffeecorner.com. Follow us on social media for updates and special offers!</p>
+        </section>
+    </main>
+
+    <footer class="contenedor-principal pie-de-pagina">
+        <div class="enlaces-legales">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="redes-sociales">
+            <a href="#"><img src="./images/instagram_icon.png" alt="Instagram de Coffee Corner"></a>
+            <a href="#"><img src="./images/facebook_icon.png" alt="Facebook de Coffee Corner"></a>
+            <a href="#"><img src="./images/twitter_icon.png" alt="Twitter de Coffee Corner"></a>
+        </div>
+        <p>&copy; 2024 Coffee Corner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
